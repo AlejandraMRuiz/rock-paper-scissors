@@ -1,7 +1,19 @@
 /* first commit */
 
-body {
-    background-image: url('img.jpg');
-    height: 100%;
-    width: 100%;
+img {
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
 }
+
+/* body {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: monospace;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+} */
+
