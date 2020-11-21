@@ -9,12 +9,15 @@ html {
 } 
 
 h1  {
-    text-align: center;
     font-size: 50px;
     text-decoration: underline;
+    text-align: center;
 }
 
-h2  {
-    text-align: center;
-    font-size: 30px;
+#weapons    {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }

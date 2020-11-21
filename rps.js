@@ -16,9 +16,10 @@
 // DONE
 
 // STEP 2: Add a translucent background to Home page text.
-// 
+// in progress...
 
 // STEP 3: Link to game page.
+// DONE
 
 // STEP 4: Add clickable 3 pics (R, P & S) that show hand on hover.
 

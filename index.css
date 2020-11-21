@@ -1,0 +1,45 @@
+
+html {
+    background: url(images/ancientDragon.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+} 
+
+.container  {
+    background-color: rgba(20,20,50,.7);
+    width: 50%;
+    display: float;
+    margin: 0 auto;
+    height: 100vh;
+    /* border-top: 0; */
+    /* border-top: 0%; */
+    /* border-top: 50%; */
+    /* padding: 100, 50, 100, 50; */
+    /* height: 100%; */
+    /* align-items: stretch; */
+    /* margin: 50%, 25%, 25%, 50%; */
+    
+
+
+
+    /* margin-top: 0; */
+}
+
+h1  {
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2  {
+    text-align: center;
+    font-size: 30px;
+}
+
+.hyperlink   {
+    color: rgb(236, 19, 45);
+    cursor: pointer;
+}
