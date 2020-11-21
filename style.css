@@ -1,19 +1,20 @@
-/* first commit */
 
-img {
-        image-rendering: auto;
-        image-rendering: crisp-edges;
-        image-rendering: pixelated;
+html {
+    background: url(images/ancientDragon.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+} 
+
+h1  {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
 }
 
-/* body {
-    background-image: url(images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: monospace;
+h2  {
     text-align: center;
-    margin: 0%;
-    padding: 0%;
-    border: 0%;
-} */
-
+    font-size: 30px;
+}
