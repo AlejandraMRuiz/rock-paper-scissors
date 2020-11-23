@@ -11,27 +11,40 @@ html {
 
 h1  {
     color: #282519;
-    font-size: 50px;
+    font-size: 55px;
     text-decoration: underline;
     text-align: center;
 }
 
 
 #weapons    {
-    height: 100vh;
+    height: 25vh;
     display: flex;
     justify-content: space-evenly; 
     padding-left: 100px;
     padding-right: 100px;
+    background-color: darkred;
 }
 
 
 #weapons > img {
     width: 150px;
     height: 150px;
-    border: 5px solid grey;
+    border: 3px solid grey;
     padding: 5px;
     cursor: pointer;
+}
+
+
+#results-display    {
+    background-color: black;
+    font-size: 25px;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly; 
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 
