@@ -1,20 +1,8 @@
 
+const rock = document.getElementById('rock');
 const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
-
-
-window.addEventListener("DOMContentLoaded", () => {
-    const timeFormatBtn = document.getElementById("button");
-    timeFormatBtn.addEventListener("click", function(event) {
-      event.stopPropagation();
-      is24HourTime = !is24HourTime;
-    });  
-  });
-
-
-// commented code (rps.js:47-57) produces...
-// 'Uncaught ReferenceError: results not defined at renderResults (rps.js:83)
-// at HTMLImageElement.<annonymous> (rps.js:42)'
+const resultsDisplay = document.getElementById('results-display');
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -90,6 +78,8 @@ function generateRandomWeapon()  {
     const weaponsArray = ['rock', 'paper', 'scissors'];
     const cpuWeapon = weaponsArray[randomNumber - 1];
     return cpuWeapon;
+    console.log(cpuWeapon);
+// why is my console.log shadowed out and saying 'unreachable code detected'??
 };
 
 
