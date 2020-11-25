@@ -23,25 +23,25 @@ function renderResults(userWeapon) {
     const cpuWeapon = generateRandomWeapon();
 
     if (userInput === 'rock' && cpuWeapon === 'paper') {
-        resultsDisplay.textContent === 'You lose :( Paper covers Rock...';
+        resultsDisplay.textContent = 'You lose :( Paper covers Rock...';
 
     } else if (userInput === 'rock' && cpuWeapon === 'scissors') {
-        resultsDisplay.textContent === 'You win! Rock crushes Scissors!';
+        resultsDisplay.textContent = 'You win! Rock crushes Scissors!';
 
     } else if (userInput === 'paper' && cpuWeapon === 'scissors') {
-        resultsDisplay.textContent === 'You lose :( Scissors cuts Paper...';
+        resultsDisplay.textContent = 'You lose :( Scissors cuts Paper...';
 
     } else if (userInput === 'paper' && cpuWeapon === 'rock') {
-        resultsDisplay.textContent === 'You win! Paper covers Rock!';
+        resultsDisplay.textContent = 'You win! Paper covers Rock!';
 
     } else if (userInput === 'scissors' && cpuWeapon === 'rock') {
-        resultsDisplay.textContent === 'You lose :( Rock crushes Scissors...';
+        resultsDisplay.textContent = 'You lose :( Rock crushes Scissors...';
 
     } else if (userInput === 'scissors' && cpuWeapon === 'paper') {
-        resultsDisplay.textContent === 'You win! Scissors cuts Paper!';
+        resultsDisplay.textContent = 'You win! Scissors cuts Paper!';
 
     } else {
-        resultsDisplay.textContent === 'You tied! One point for each side :)';
+        resultsDisplay.textContent = 'You tied! One point for each side :)';
     }
 };
 
@@ -50,7 +50,6 @@ function generateRandomWeapon()  {
     const randomNumber = Math.floor(Math.random() * 3) + 1;
     const weaponsArray = ['rock', 'paper', 'scissors'];
     const cpuWeapon = weaponsArray[randomNumber - 1];
-    debugger
     return cpuWeapon;
     console.log(cpuWeapon);
 // why is my console.log shadowed out and saying 'unreachable code detected'??
