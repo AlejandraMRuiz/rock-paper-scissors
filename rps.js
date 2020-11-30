@@ -109,7 +109,7 @@ function generateRandomWeapon()  {
 
 // STEP 12: Fix any loading delays.
 
-// STEP 13: Fix up design.
+// STEP 13: Fix up design, including ensuring all HTML is readable against that dragon backdrop.
 
 // STEP 14: Tidy up code (includes global vars review, and if only used locally, convert). 
 // Clean, refactor as needed.
