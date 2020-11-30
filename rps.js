@@ -5,16 +5,28 @@ const scissors = document.getElementById('scissors');
 const resultsDisplay = document.getElementById('results-display');
 
 
-rock.addEventListener('click', () => {
-    renderResults('rock');
+window.addEventListener('DOMContentLoaded', () => {
+    const rock = document.getElementById('rock');
+    rock.addEventListener('click', function(event) {
+        event.stopPropagation();
+        renderResults('rock');
+    });
 });
 
-paper.addEventListener('click', () => {
-    renderResults('paper');
+window.addEventListener('DOMContentLoaded', () => {
+    const paper = document.getElementById('paper');
+    paper.addEventListener('click', function(event) {
+        event.stopPropagation();
+        renderResults('paper');
+    });
 });
 
-scissors.addEventListener('click', () => {
-    renderResults('scissors');
+window.addEventListener('DOMContentLoaded', () => {
+    const scissors = document.getElementById('scissors');
+    scissors.addEventListener('click', function(event) {
+        event.stopPropagation();
+        renderResults('scissors');
+    });
 });
 
 
@@ -60,46 +72,12 @@ function generateRandomWeapon()  {
 
 
 
-
-// window.addEventListener('DOMContentLoaded', () => {
-//     const rock = document.getElementById('rock');
-//     rock.addEventListener('click', function(event) {
-//         event.stopPropagation();
-//         renderResults('rock');
-//     });
-// });
-
-
-// window.addEventListener('DOMContentLoaded', () => {
-//     const paper = document.getElementById('paper');
-//     paper.addEventListener('click', function(event) {
-//         event.stopPropagation();
-//         renderResults('paper');
-//     });
-// });
-
-
-// window.addEventListener('DOMContentLoaded', () => {
-//     const scissors = document.getElementById('scissors');
-//     scissors.addEventListener('click', function(event) {
-//         event.stopPropagation();
-//         renderResults('scissors');
-//     });
-// });
-
-
-
-
-
-
-
-
 // PROJECT PLAN:
 
 // STEP 0: Add a background pic.
 // DONE
 
-// STEP 1: Add Home page text content.
+// STEP 1: Add Home page text content (game history).
 // DONE
 
 // STEP 2: Make Home page text readable.
@@ -111,24 +89,29 @@ function generateRandomWeapon()  {
 // STEP 4: Add clickable 3 pics (R, P & S) that show hand on hover.
 // DONE
 
-
 // STEP 5: Have computer display outcome based on what was clicked (if statement).
+// DONE
+
+
+// STEP 6: Have image selections of both sides appear below main images & above results-display text. 
 // in progress...
-// you should probably break this target down into its parts.
 
 
-// STEP 6: Have score updated based on displayed outcome.
+// STEP 7: Address question: lines 68-69.
 
-// STEP 7: If it's a tie, add 1 point to BOTH sides.
+// STEP 8: Have a green border appear around the winning weapon; red border for the losing weapon.
 
-// STEP 8: On loading, nice pop-up explaining the history of the game.
+// STEP 9: Have a scoreboard for "player" vs "computer" updated based on results-display text.
 
-// STEP 9: Add HTML such as "player", "computer", etc.
+// STEP 10: If it's a tie, add 1 point to BOTH sides.
 
-// STEP 10: Fix any loading delays.
+// STEP 11: Get "restart game" button working.
 
-// STEP 11: Fix up design.
+// STEP 12: Fix any loading delays.
 
-// STEP 12: Tidy up code. Clean, refactor.
+// STEP 13: Fix up design.
 
-// STEP 13: Submit.
+// STEP 14: Tidy up code (includes global vars review, and if only used locally, convert). 
+// Clean, refactor as needed.
+
+// STEP 15: Submit.

@@ -23,7 +23,6 @@ h1  {
     justify-content: space-evenly; 
     padding-left: 100px;
     padding-right: 100px;
-    background-color: darkred;
 }
 
 
@@ -37,9 +36,8 @@ h1  {
 
 
 #results-display    {
-    background-color: black;
     font-size: 25px;
-    color: white;
+    color: black;
     height: 10vh;
     display: flex;
     justify-content: space-evenly; 
