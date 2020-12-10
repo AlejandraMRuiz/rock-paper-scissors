@@ -1,38 +1,18 @@
 
-const rock = document.getElementById('rock');
-const paper = document.getElementById('paper');
-const scissors = document.getElementById('scissors');
-const resultsDisplay = document.getElementById('results-display');
-
-
 window.addEventListener('DOMContentLoaded', () => {
     const rock = document.getElementById('rock');
-    rock.addEventListener('click', function(event) {
-        event.stopPropagation();
-        renderResults('rock');
-    });
-});
-
-window.addEventListener('DOMContentLoaded', () => {
     const paper = document.getElementById('paper');
-    paper.addEventListener('click', function(event) {
-        event.stopPropagation();
-        renderResults('paper');
-    });
-});
-
-window.addEventListener('DOMContentLoaded', () => {
     const scissors = document.getElementById('scissors');
-    scissors.addEventListener('click', function(event) {
-        event.stopPropagation();
-        renderResults('scissors');
-    });
+
+    rock.addEventListener('click', () => renderResults('rock'));
+    paper.addEventListener('click', () => renderResults('paper'));
+    scissors.addEventListener('click', () => renderResults('scissors'));
 });
 
 
-function renderResults(userWeapon) {
-    const userInput = userWeapon;
+function renderResults(userInput) {
     const cpuWeapon = generateRandomWeapon();
+    const resultsDisplay = document.getElementById('results-display');
 
     if (userInput === 'rock' && cpuWeapon === 'paper') {
         resultsDisplay.textContent = 'You lose :( Paper covers Rock...';
@@ -63,8 +43,6 @@ function generateRandomWeapon()  {
     const weaponsArray = ['rock', 'paper', 'scissors'];
     const cpuWeapon = weaponsArray[randomNumber - 1];
     return cpuWeapon;
-    console.log(cpuWeapon);
-// why is my console.log shadowed out and saying 'unreachable code detected'??
 };
 
 
